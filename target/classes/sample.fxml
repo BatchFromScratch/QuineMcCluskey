@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import com.bene.logic.LatexView?>
+<VBox fx:id="vbox" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bene.ui.Controller">
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+    <padding>
+        <Insets left="5.0" right="5.0" top="10.0" />
+    </padding>
+     <Label text="Zahlen kommagetrennt eingeben:" />
+   <TextArea fx:id="input" wrapText="true">
+      <VBox.margin>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </VBox.margin></TextArea>
+   <Button mnemonicParsing="false" onAction="#buttonClicked" text="Berechnen">
+      <VBox.margin>
+         <Insets bottom="5.0" />
+      </VBox.margin>
+   </Button>
+    <TabPane fx:id="tabs" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+          <Tab text="Eingabe">
+              <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+          </Tab>
+      </tabs>
+    </TabPane>
+</VBox>
